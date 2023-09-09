@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/css/내사건분석2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <script>
+      $(document).ready(function() {
+          // localStorage에서 값을 가져옵니다.
+          var 사건종류 = localStorage.getItem('사건종류');
+
+          // 가져온 값을 적절하게 사용합니다.dd
+          console.log(사건종류);
+      });
+    </script>
+  </head>
+  <body>
+    <div class="div153">
+      <b class="ai19">AI 로펌</b>
+      <div class="child34"></div>
+      <div class="rectangle-parent2">
+        <div class="group-child8"></div>
+        <div class="group-child9"></div>
+        <div class="group-child10"></div>
+        <div class="parent14">
+          <div class="div154"></div>
+          <div class="div155"></div>
+        </div>
+        <div class="parent15">
+          <div class="div154"></div>
+          <div class="div155"></div>
+        </div>
+        <div class="parent16">
+          <div class="div154"></div>
+          <div class="div155"></div>
+        </div>
+        <div class="parent17">
+          <div class="div160"></div>
+          <div class="div161"></div>
+        </div>
+        <div class="i">사건정보 I</div>
+        <div class="div162">사건 발생일</div>
+        <div class="div163">관할법원</div>
+        <select class="div164">
+          <option value="서울중앙지방법원">서울중앙지방법원</option>
+          <option value="대구중앙지방법원">대구중앙지방법원</option>
+          <!-- ... 다른 법원 추가 ... -->
+        </select> 
+        <div class="div165">변호인 정보</div>
+        <select class="div166">
+          <option value="국선">국선</option>
+          <option value="비국선">비국선</option>
+        </select> 
+        <input type="date" class="div167">
+        <div class="div168" onclick="saveAndGoToNext()">다음</div>
+      </div>
+      <div class="div169">
+        <div class="child35"></div>
+      </div>
+      <b class="ai20">AI 로펌</b>
+      <b class="b10">한이음</b>
+    </div>
+    <script>
+      function saveAndGoToNext() {
+          var eventDate = document.querySelector(".div167").value;
+          var court = document.querySelector(".div164").value;
+          var lawyerInfo = document.querySelector(".div166").value;
+          
+          sessionStorage.setItem("eventDate", eventDate);
+          sessionStorage.setItem("court", court);
+          sessionStorage.setItem("lawyerInfo", lawyerInfo);
+          window.location.href = "내사건분석3.html";
+      }
+      </script>
+  </body>
+</html>
