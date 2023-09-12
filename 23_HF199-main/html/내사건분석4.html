@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/css/내사건분석4.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="div103">
+      <img class="rectangle-icon" alt="" src="./public/rectangle-1094.svg" />
+      <b class="ai15">AI 로펌</b>
+      <div class="child29"></div>
+      <div class="rectangle-container">
+        <div class="group-child2"></div>
+        <div class="group-child3"></div>
+        <div class="group-child4"></div>
+        <div class="parent2">
+          <div class="div104"></div>
+          <div class="div105"></div>
+        </div>
+        <div class="parent3">
+          <div class="div106"></div>
+          <div class="div107"></div>
+        </div>
+        <div class="parent4">
+          <div class="div108"></div>
+          <div class="div109"></div>
+        </div>
+        <div class="parent5">
+          <div class="div108"></div>
+          <div class="div109"></div>
+        </div>
+        <div class="parent6">
+          <div class="div108"></div>
+          <div class="div109"></div>
+        </div>
+        <div class="parent7">
+          <div class="div114"></div>
+          <div class="div115"></div>
+        </div>
+        <div class="div116">기타정보</div>
+        <div class="div117">사고의 의도</div>
+        <div class="div118">과거 다른 사고를 낸적이 있습니까?</div>
+        <!-- <div class="div119">아니오, 벌금형 이상의 사고를 낸적이 없습니다</div> -->
+        <select class="div119">
+          <option value="사고안냄">아니오, 벌금형 이상의 사고를 낸적이 없습니다</option>
+          <option value="사고냄"> 예, 사고를 낸 적이 있습니다</option>
+          <!-- ... 다른 옵션 추가 가능 ... -->
+        </select>
+        <div class="div120">건강상태</div>
+        <div class="div121">
+          운전자는 사고 당시 집중력을 유지할 수 있는 상태였나요?
+        </div>
+        <div class="div122">장애 상태</div>
+        <!-- <div class="div123">신체적인 질환</div> -->
+        <select class="div123">
+          <option value="약물">두통</option>
+          <option value="집중">안구통증</option>
+          <!-- ... 다른 옵션 추가 가능 ... -->
+        </select>
+        <!-- <div class="div124">청각적인 장애</div> -->
+        <select class="div124">
+          <option value="청각">청각적인 장애</option>
+          <option value="시각">시각 장애</option>
+          <!-- ... 다른 옵션 추가 가능 ... -->
+        </select>
+        <!-- <div class="div125">아니요. 약물 섭취를 했습니다</div> -->
+        <select class="div125">
+          <option value="약물">아니요. 약물 섭취를 했습니다</option>
+          <option value="집중"> 예, 집중할 수 있었습니다</option>
+          <!-- ... 다른 옵션 추가 가능 ... -->
+        </select>
+        <select class="div126">
+          <option value="고의">사고를 고의로 냈습니다</option>
+          <option value="실수">사고를 실수로 냈다</option>
+          <!-- ... 다른 옵션 추가 가능 ... -->
+        </select>
+        <div class="div127" onclick="submitDataToAPIGateway()">결과 확인</div>
+      </div>
+      <div class="div128">
+        <div class="child30"></div>
+      </div>
+      <b class="b8">한이음</b>
+      <b class="ai16">AI 로펌</b>
+    </div>
+    <script>
+      function submitDataToAPIGateway() {
+        // Get data from sessionStorage
+        const 사건종류 = sessionStorage.getItem("event");
+        const 사건날짜 = sessionStorage.getItem("eventDate");
+        const 법원 = sessionStorage.getItem("court");
+        const 국선상태 = sessionStorage.getItem("lawyerInfo");
+        const 사고원인 = sessionStorage.getItem("accidentCause");
+        const 사고장소 = sessionStorage.getItem("accidentPlace");
+        const 본인 = sessionStorage.getItem("selfCause");
+        const 상대방 = sessionStorage.getItem("otherCause");
+        const 교통사고유형 = sessionStorage.getItem("accidentType");
+    
+        // Get data from current page
+        const 고의성 = document.querySelector(".div126").value;
+        const 사고유무 = document.querySelector(".div119").value;
+        const 집중력 = document.querySelector(".div125").value;
+        const 장애상태 = document.querySelector(".div124").value;
+        const 건강상태 = document.querySelector(".div123").value;
+    
+        const dataToSend = {
+          사건종류,
+          사건날짜,
+          법원,
+          국선상태,
+          사고원인,
+          사고장소,
+          본인,
+          상대방,
+          교통사고유형,
+          고의성,
+          사고유무,
+          집중력,
+          장애상태,
+          건강성태
+        };
+    
+        fetch("", {
+          method: "POST",
+          body: JSON.stringify(dataToSend),
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log("Success:", data);
+          window.location.href = "결과확인.html";
+        })
+        .catch(error => {
+          console.error("Error:", error);
+        });
+      }
+    </script>
+    
+  </body>
+</html>

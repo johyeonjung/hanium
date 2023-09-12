@@ -1,0 +1,291 @@
+.b1 {
+  position: absolute;
+  top: 946px;
+  left: 125px;
+  line-height: 100%;
+}
+.input-text-child {
+  position: absolute;
+  height: 63.29%;
+  width: 100%;
+  top: 36.71%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #aeaeae;
+  box-sizing: border-box;
+}
+.div33,
+.div34 {
+  position: absolute;
+}
+.div33 {
+  width: 51.56%;
+  top: 0;
+  left: 0;
+  line-height: 130%;
+  font-weight: 500;
+  display: inline-block;
+}
+.div34 {
+  top: 59.49%;
+  left: 3.44%;
+  font-size: 14px;
+  line-height: 100%;
+  color: #bdbdbd;
+}
+.input-text {
+  position: relative;
+  width: 320px;
+  height: 79px;
+}
+.abcgmailcom {
+  position: absolute;
+  top: 55.7%;
+  left: 3.44%;
+  font-size: 14px;
+  line-height: 150%;
+  color: #bdbdbd;
+}
+.group-child,
+.icons8-eye-96-1-1 {
+  position: absolute;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.icons8-eye-96-1-1 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+}
+.group-child {
+  height: 69.13%;
+  width: 75.57%;
+  top: 15.43%;
+  right: 12.21%;
+  bottom: 15.43%;
+  left: 12.21%;
+}
+.icons8-eye-96-1-1-parent {
+  position: absolute;
+  height: 37.97%;
+  width: 9.38%;
+  top: 49.37%;
+  right: 4.38%;
+  bottom: 12.66%;
+  left: 86.25%;
+}
+.div40 {
+  position: absolute;
+  width: 91.25%;
+  top: 0;
+  left: 8.75%;
+  line-height: 130%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.checkbox-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #aeaeae;
+  box-sizing: border-box;
+}
+.checkbox,
+.parent {
+  position: absolute;
+  height: 95.24%;
+  width: 6.25%;
+  top: 0;
+  right: 93.75%;
+  bottom: 4.76%;
+  left: 0;
+}
+.parent {
+  height: 13.91%;
+  width: 100%;
+  right: 0;
+  bottom: 86.09%;
+}
+.span1 {
+  line-height: 150%;
+}
+.span2 {
+  text-decoration: underline;
+  line-height: 100%;
+}
+.txt1 {
+  line-break: anywhere;
+  width: 100%;
+}
+.checkbox1,
+.div41 {
+  position: absolute;
+  top: 0;
+}
+.div41 {
+  width: 91.25%;
+  left: 8.75%;
+  display: flex;
+  align-items: center;
+}
+.checkbox1 {
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.group {
+  position: relative;
+  width: 320px;
+  height: 21px;
+}
+.span3 {
+  text-decoration: underline;
+}
+.div42 {
+  position: absolute;
+  width: 91.25%;
+  top: 15%;
+  left: 8.75%;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+}
+.container {
+  position: relative;
+  width: 320px;
+  height: 20px;
+}
+.div44,
+.group-parent {
+  position: absolute;
+  display: flex;
+}
+.div44 {
+  width: 91.25%;
+  top: 0;
+  left: 8.75%;
+  line-height: 150%;
+  align-items: center;
+}
+.group-parent {
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 110px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 14px;
+}
+.button {
+  position: relative;
+  width: 320px;
+  height: 151px;
+}
+.input-text-parent {
+  position: absolute;
+  top: calc(50% - 264.5px);
+  left: calc(50% - 160px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 25px;
+  color: #404040;
+}
+.button-child {
+  top: calc(50% - 27.5px);
+  left: calc(50% - 160px);
+  background-color: #aeaeae;
+  width: 320px;
+  height: 55px;
+}
+.b2,
+.button-child,
+.button1 {
+  position: absolute;
+}
+.b2 {
+  top: 34.55%;
+  left: 27.81%;
+  line-height: 100%;
+}
+.button1 {
+  bottom: 29px;
+  left: calc(50% - 160px);
+  width: 320px;
+  height: 55px;
+  cursor: pointer;
+  text-align: center;
+}
+.previous-icon {
+  position: absolute;
+  top: calc(50% - 39px);
+  left: calc(50% - 52px);
+  width: 23px;
+  height: 23px;
+  object-fit: cover;
+}
+.headertitle-with-back {
+  position: absolute;
+  top: 24px;
+  left: 20px;
+  width: 104px;
+  height: 78px;
+}
+.ai8 {
+  position: relative;
+  line-height: 130%;
+}
+.div45 {
+  position: absolute;
+  top: calc(50% - 359.5px);
+  left: calc(50% - 166px);
+  border-radius: 10px;
+  background-color: #3f51b5;
+  width: 326px;
+  height: 71px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+}
+.pages-01 {
+  position: absolute;
+  top: calc(50% - 423px);
+  left: calc(50% - 244px);
+  background-color: #fff;
+  width: 488px;
+  height: 845px;
+  overflow: hidden;
+}
+.div32 {
+  position: relative;
+  background-color: #dadada;
+  width: 100%;
+  height: 1080px;
+  overflow-y: auto;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Noto Sans KR";
+}

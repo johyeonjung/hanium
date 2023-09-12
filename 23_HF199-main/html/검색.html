@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+
+  <body>
+    <style>
+        .back {
+            height: 493.03px;
+        }
+            
+.div1 {
+  height: 28.45%;
+  top: 35.37%;
+  bottom: 36.18%;
+  background-color: #d9d9d9;
+}
+.div1,
+.div2,
+.div3 {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+.div2 {
+  height: 28.45%;
+  top: 66.13%;
+  bottom: 5.42%;
+  
+}
+.div3 {
+  top: calc(50% - 762.5px);
+  background-color: #d9d9d9;
+  height: 100%;
+}
+
+
+.child {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  height: 92px;
+}
+.ai {
+  top: calc(50% - 22px);
+  left: calc(50% - 595px);
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  width: 144px;
+  height: 45px;
+}
+.ai,
+.b,
+.div4 {
+  position: absolute;
+}
+.b {
+  top: calc(50% - 23px);
+  left: calc(50% + 555px);
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  width: 142px;
+  height: 45px;
+}
+.div4 {
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 92px;
+  font-size: 30px;
+  color: #fff;
+}
+.ai1 {
+  top: calc(50% - 835.5px);
+  left: calc(50% - 605px);
+  font-size: 35px;
+  line-height: 130%;
+  color: #222;
+  cursor: pointer;
+}
+.ai1,
+.item {
+  position: absolute;
+}
+
+.item {
+  top: calc(50% - 27.5px);
+  left: calc(50% - 247px);
+  border-radius: 30px;
+  background-color: #d9d9d9;
+  width: 494px;
+  height: 55px;
+}
+.icons8-search-30-1 {
+  position: absolute;
+  top: calc(50% - 14.5px);
+  left: calc(50% - 232px);
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.div5 {
+  position: absolute;
+  top: calc(50% - 841.5px);
+  left: calc(50% - 281px);
+  width: 494px;
+  height: 55px;
+}
+
+
+.e-mail {
+  position: absolute;
+}
+
+.e-mail {
+  top: calc(50% - 835.5px);
+  left: calc(50% + 389px);
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.e-mail,
+.span {
+  color: #222;
+}
+.e-mail1 {
+  position: absolute;
+  top: calc(50% - 835.5px);
+  left: calc(50% + 508px);
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+.div {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1733px;
+  overflow-y: auto;
+  text-align: left;
+  font-size: 24px;
+  color: #000;
+  font-family: "Noto Sans KR";
+}
+.red-background {
+  background-color: red;
+}
+
+
+
+
+
+
+    </style>
+<div class="div">
+    <div id="back"> 
+        <div class="div3"></div>
+      </div>
+    
+
+      <div class="div4">
+        <div class="child"></div>
+        <b class="ai">AI 로펌</b>
+        <b class="b">한이음</b>
+      </div>
+      <b class="ai1" id="aiLaw" >AI 로펌</b>
+     
+      <div class="div5">
+        <div class="item"></div>
+        <img
+          class="icons8-search-30-1"
+          alt=""
+          src="./public/icons8search30-1@2x.png"
+        />
+      </div>
+      <div class="div6">
+      
+      
+      </div>
+      <div class="e-mail" id="loginText">로그인</div>
+      <div class="e-mail1" id="registerText">
+        <span> </span>
+        <span class="span">회원가입</span>
+      </div>
+    
+</div>
+ 
+      
+
+    
+    </div>
+  </body>
+  <script>
+    document.getElementById('aiLaw').addEventListener('click', function() {
+        window.location.href = "메인.html"; // 메인 페이지로 이동
+    });
+
+    document.getElementById('loginText').addEventListener('click', function() {
+        window.location.href = "로그인페이지.html"; // 로그인 페이지로 이동
+    });
+
+    document.getElementById('registerText').addEventListener('click', function() {
+        window.location.href = "회원가입.html"; // 회원가입 페이지로 이동
+    });
+
+    document.getElementById('analysisBtn').addEventListener('click', function() {
+        window.location.href = "내사건분석1.html"; // 내 사건 분석 페이지로 이동
+    });
+  </script>
+</html>
